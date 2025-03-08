@@ -143,13 +143,3 @@ async function deleteSong(songId) {
     }
 }
 
-export async function logout() {
-    try{
-        await signOut(auth)
-        console.log("User logged out")
-
-    }catch(error){
-        console.error("Logout error"+error.message)
-    }
-    
-}
